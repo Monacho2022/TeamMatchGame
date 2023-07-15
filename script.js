@@ -59,13 +59,12 @@ function calculateTeam() {
 function showQuestion() {
     const questionElement = document.getElementById('questions');
     questionElement.innerHTML = `
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" value="${getNameFromStorage()}"><br><br>
+        
+        <input placeholder="Ingresa tu nombre" type="text" id="name" value="${getNameFromStorage()}"><br><br>
         <h2>${questions[currentQuestion].question}</h2>
-        <input type="radio" name="answer" value="A"> A
-        <input type="radio" name="answer" value="B"> B
-        <br><br>
-        <button onclick="calculateTeam()">Siguiente pregunta</button>
+        <input onclick="calculateTeam()" type="radio" name="answer" value="A"> A
+        <input onclick="calculateTeam()" type="radio" name="answer" value="B"> B        
+       
     `;
 }
 
