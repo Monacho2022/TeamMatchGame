@@ -60,7 +60,7 @@ function showQuestion() {
     const questionElement = document.getElementById('questions');
     questionElement.innerHTML = `
         
-        <input placeholder="Ingresa tu nombre" type="text" id="name" value="${getNameFromStorage()}"><br><br>
+        <input placeholder="Diga Su Nombre" type="text" id="name" value="${getNameFromStorage()}"><br><br>
         <h2>${questions[currentQuestion].question}</h2>
         <input onclick="calculateTeam()" type="radio" name="answer" value="A"> A
         <input onclick="calculateTeam()" type="radio" name="answer" value="B"> B        
